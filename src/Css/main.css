@@ -1,0 +1,113 @@
+.content-wrap{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header{
+  height: 80px;
+  background-color: #90EE90;
+  flex-shrink:0;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding:  0 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.nav-header span{
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+}
+.nav-header h3{
+  margin: 0;
+}
+@media (min-width:760px) {
+  .content-wrap{
+    display: flex;
+    flex-direction: row;
+  }
+}
+.nav-footer{
+  height: 80px;
+  background-color: #90EE90;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  flex-shrink:0;
+  font-size: 18px;
+}
+.nav-footer a:focus,a:hover{
+  text-decoration: none;
+}
+.nav-footer a{
+  border-right: 1px solid rgba(0,0,0,0.3);
+  color:#fff;
+  flex-grow: 1;
+  text-align: center;
+}
+.nav-footer a:last-child{
+  border: none;
+}
+.left-nav{
+  display: flex;
+  flex-direction: column;
+  flex-shrink:0;
+  width: 300px;
+  background-color: #fff;
+}
+.left-nav h3{
+  margin: 0;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+  background-color: #90EE90;
+}
+.left-nav a{
+  padding: 20px 20px;
+}
+.left-nav a:hover{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*.left-nav .active{
+  background-color: rgba(0, 0, 0, 0.1);
+}*/
+.content-main{
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.home-container{
+  background-image: url(../images/home-bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+.pic-bg{
+  width: 100%;
+  display: block;
+}
+.work-text{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color:#fff;
+  padding-left: 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+@keyframes mylove
+{
+  from {transform: rotate(0deg);}
+  to{{transform: rotate(360deg);}}
+}
